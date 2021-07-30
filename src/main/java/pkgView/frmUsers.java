@@ -63,6 +63,7 @@ public class frmUsers extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         btnNew = new javax.swing.JButton();
         btnSave = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
@@ -76,92 +77,95 @@ public class frmUsers extends javax.swing.JFrame {
         txtNickname = new javax.swing.JTextField();
         lblPassword = new javax.swing.JLabel();
         txtPassword = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator3 = new javax.swing.JSeparator();
+        jSeparator4 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBackground(new java.awt.Color(32, 33, 35));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnNew.setBackground(new java.awt.Color(244, 47, 99));
         btnNew.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
+        btnNew.setForeground(new java.awt.Color(255, 255, 255));
         btnNew.setText("New");
+        jPanel1.add(btnNew, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 286, 120, -1));
 
+        btnSave.setBackground(new java.awt.Color(244, 47, 99));
         btnSave.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
+        btnSave.setForeground(new java.awt.Color(255, 255, 255));
         btnSave.setText("Save");
+        jPanel1.add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(231, 286, 120, -1));
 
+        btnClose.setBackground(new java.awt.Color(244, 47, 99));
         btnClose.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
+        btnClose.setForeground(new java.awt.Color(255, 255, 255));
         btnClose.setText("Close");
+        jPanel1.add(btnClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 286, 120, -1));
 
+        List.setBackground(new java.awt.Color(32, 33, 35));
+        List.setForeground(new java.awt.Color(51, 102, 204));
         jScrollPane1.setViewportView(List);
 
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 0, 334, 353));
+
         lblId.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
+        lblId.setForeground(new java.awt.Color(51, 102, 204));
         lblId.setText("ID");
+        jPanel1.add(lblId, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 54, 80, -1));
 
         lblName.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
+        lblName.setForeground(new java.awt.Color(51, 102, 204));
         lblName.setText("Name");
+        jPanel1.add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 166, 80, -1));
+
+        txtId.setBackground(new java.awt.Color(32, 33, 35));
+        txtId.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
+        txtId.setForeground(new java.awt.Color(255, 255, 255));
+        txtId.setBorder(null);
+        txtId.setCaretColor(new java.awt.Color(255, 255, 255));
+        jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 92, 220, -1));
+
+        txtName.setBackground(new java.awt.Color(32, 33, 35));
+        txtName.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
+        txtName.setForeground(new java.awt.Color(255, 255, 255));
+        txtName.setBorder(null);
+        txtName.setCaretColor(new java.awt.Color(255, 255, 255));
+        jPanel1.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 204, 220, -1));
 
         lblNickname.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
+        lblNickname.setForeground(new java.awt.Color(51, 102, 204));
         lblNickname.setText("Nickname");
+        jPanel1.add(lblNickname, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 54, 80, -1));
+
+        txtNickname.setBackground(new java.awt.Color(32, 33, 35));
+        txtNickname.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
+        txtNickname.setForeground(new java.awt.Color(255, 255, 255));
+        txtNickname.setBorder(null);
+        txtNickname.setCaretColor(new java.awt.Color(255, 255, 255));
+        jPanel1.add(txtNickname, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 92, 220, -1));
 
         lblPassword.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
+        lblPassword.setForeground(new java.awt.Color(51, 102, 204));
         lblPassword.setText("Password");
+        jPanel1.add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 172, 80, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnNew, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(56, 56, 56)
-                        .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(69, 69, 69)
-                        .addComponent(btnClose, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(lblId, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtId))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(35, 35, 35)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(44, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblId)
-                    .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblNickname)
-                    .addComponent(txtNickname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(66, 66, 66)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblName)
-                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblPassword)
-                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnNew)
-                    .addComponent(btnSave)
-                    .addComponent(btnClose))
-                .addGap(35, 35, 35))
-            .addComponent(jScrollPane1)
-        );
+        txtPassword.setBackground(new java.awt.Color(32, 33, 35));
+        txtPassword.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
+        txtPassword.setForeground(new java.awt.Color(255, 255, 255));
+        txtPassword.setBorder(null);
+        txtPassword.setCaretColor(new java.awt.Color(255, 255, 255));
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 210, 220, -1));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 124, 220, 10));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 124, 220, 10));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 242, 220, 10));
+        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 242, 220, 10));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 353));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -206,7 +210,12 @@ public class frmUsers extends javax.swing.JFrame {
     private javax.swing.JButton btnClose;
     private javax.swing.JButton btnNew;
     private javax.swing.JButton btnSave;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
     private javax.swing.JLabel lblId;
     private javax.swing.JLabel lblName;
     private javax.swing.JLabel lblNickname;

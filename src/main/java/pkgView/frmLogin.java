@@ -30,78 +30,87 @@ public class frmLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblNickname = new javax.swing.JLabel();
-        txtNickname = new javax.swing.JTextField();
-        lblPassword = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         txtPassword = new javax.swing.JTextField();
         btnExit = new javax.swing.JButton();
         btnLogin = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        lblNickname = new javax.swing.JLabel();
+        txtNickname = new javax.swing.JTextField();
+        lblPassword = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(400, 335));
+        setResizable(false);
+
+        jPanel1.setBackground(new java.awt.Color(32, 33, 35));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtPassword.setBackground(new java.awt.Color(32, 33, 35));
+        txtPassword.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
+        txtPassword.setForeground(new java.awt.Color(255, 255, 255));
+        txtPassword.setBorder(null);
+        txtPassword.setCaretColor(new java.awt.Color(255, 255, 255));
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 370, 330, -1));
+
+        btnExit.setBackground(new java.awt.Color(51, 102, 204));
+        btnExit.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
+        btnExit.setForeground(new java.awt.Color(255, 255, 255));
+        btnExit.setText("Exit");
+        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 440, 120, -1));
+
+        btnLogin.setBackground(new java.awt.Color(244, 47, 99));
+        btnLogin.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
+        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogin.setText("Login");
+        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 440, 120, -1));
 
         lblNickname.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
+        lblNickname.setForeground(new java.awt.Color(57, 113, 177));
         lblNickname.setText("Nickname");
+        jPanel1.add(lblNickname, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 120, -1));
 
+        txtNickname.setBackground(new java.awt.Color(32, 33, 35));
         txtNickname.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
+        txtNickname.setForeground(new java.awt.Color(255, 255, 255));
+        txtNickname.setBorder(null);
+        txtNickname.setCaretColor(new java.awt.Color(255, 255, 255));
+        txtNickname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNicknameActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtNickname, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, 340, -1));
 
         lblPassword.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
+        lblPassword.setForeground(new java.awt.Color(57, 113, 177));
         lblPassword.setText("Password");
+        jPanel1.add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 120, -1));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 340, 10));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, 330, 10));
 
-        txtPassword.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
-
-        btnExit.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
-        btnExit.setText("Exit");
-
-        btnLogin.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
-        btnLogin.setText("Login");
-
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLabel1.setIcon(new javax.swing.ImageIcon("/home/thomy/Google Drive/Training/2021/mision_tic_2022/c2_programacion_basica/c2-mision-tic-2022/semana2/reto2/informeReto2/misiontic.png")); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(lblNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(txtNickname, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(lblPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(75, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 462, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNickname)
-                    .addComponent(txtNickname, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblPassword)
-                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnExit)
-                    .addComponent(btnLogin))
-                .addContainerGap(70, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtNicknameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNicknameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNicknameActionPerformed
 
     public JTextField getTxtNickname() {
         return txtNickname;
@@ -163,7 +172,10 @@ public class frmLogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnLogin;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel lblNickname;
     private javax.swing.JLabel lblPassword;
     private javax.swing.JTextField txtNickname;
