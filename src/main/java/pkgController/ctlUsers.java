@@ -29,6 +29,8 @@ public class ctlUsers implements ActionListener {
         this.vista_users.getBtnNew().addActionListener(this);
         this.vista_users.getBtnSave().addActionListener(this);
         this.vista_users.getBtnClose().addActionListener(this);
+        this.vista_users.getBtnGraph().addActionListener(this);
+        this.vista_users.getBtnExport().addActionListener(this);
 
         this.vista_users.getList().addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -83,6 +85,20 @@ public class ctlUsers implements ActionListener {
                 else{
                     JOptionPane.showMessageDialog(vista_users, "The record was not saved.");
                 }
+                break;
+            }
+            case "Graph": {
+                String[] args = null;
+                new pkgView.pkgraph.graphUsers().init(args);
+                break;
+            }
+            case "Export": {
+                modelo.getUser().setId(vista_users.getTxtId().getText());
+                modelo.getUser().setName(vista_users.getTxtName().getText());
+                modelo.getUser().setNickname(vista_users.getTxtNickname().getText());
+                modelo.getUser().setPassword(vista_users.getTxtPassword().getText());
+                
+                new pkgModel.export.ExcelWriter().write(modelo.select());
                 break;
             }
             case "Close": {

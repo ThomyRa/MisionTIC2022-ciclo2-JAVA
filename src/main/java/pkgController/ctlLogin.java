@@ -22,8 +22,8 @@ public class ctlLogin implements ActionListener {
     frmLogin vista;
     frmMenu menu;
 
-    public ctlLogin(clsDAOUser modelo, frmLogin vista) {
-        this.modelo = modelo;
+    public ctlLogin(frmLogin vista) {
+        this.modelo = new clsDAOUser();
         this.vista = vista;
         this.vista.getBtnLogin().addActionListener(this);
         this.vista.getBtnExit().addActionListener(this);
@@ -38,17 +38,20 @@ public class ctlLogin implements ActionListener {
                 if (modelo.val() == true) {
                     vista.setVisible(false);
                     ctlMenu controller_menu = new ctlMenu(new frmMenu());
+                    new pkgModel.clsDAOLog(modelo.getUser().getNickname()).insert();
                     controller_menu.show_frame();
-                }
-                else {
+                } else {
                     JOptionPane.showMessageDialog(vista, "Invalid user.");
                 }
                 break;
             }
             case "Exit": {
-                this.vista.dispose();
+                System.exit(0);
                 break;
             }
         }
+    }
+    public void show_frame(){
+        vista.setVisible(true);
     }
 }

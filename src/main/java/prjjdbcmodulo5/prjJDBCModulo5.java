@@ -15,9 +15,8 @@ import pkgView.frmLogin;
  */
 public class prjJDBCModulo5 {
     public static void main(String[] args) {
-        clsDAOUser modelo = new clsDAOUser();
         frmLogin vista = new frmLogin();
-        ctlLogin controlador = new ctlLogin(modelo, vista);
+        ctlLogin controlador = new ctlLogin(vista);
         vista.setVisible(true);
     }
 }

@@ -7,6 +7,7 @@ package pkgController;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import pkgView.frmLogin;
 import pkgView.frmMenu;
 import pkgView.frmUsers;
 
@@ -34,6 +35,7 @@ public class ctlMenu implements ActionListener {
             }
             case "Logout": {
                 this.vista_menu.dispose();
+                new ctlLogin(new frmLogin()).show_frame();
                 break;
             }
         }

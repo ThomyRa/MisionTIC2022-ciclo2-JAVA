@@ -88,8 +88,8 @@ public class frmLogin extends javax.swing.JFrame {
         lblPassword.setForeground(new java.awt.Color(57, 113, 177));
         lblPassword.setText("Password");
         jPanel1.add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 120, -1));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 340, 10));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, 330, 10));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 340, 10));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 390, 330, 10));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("/home/thomy/Google Drive/Training/2021/mision_tic_2022/c2_programacion_basica/c2-mision-tic-2022/semana2/reto2/informeReto2/misiontic.png")); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
