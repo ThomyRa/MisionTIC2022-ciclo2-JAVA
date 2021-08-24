@@ -32,7 +32,7 @@ public class ctlUsers implements ActionListener {
         this.vista_users.getBtnGraph().addActionListener(this);
         this.vista_users.getBtnExport().addActionListener(this);
 
-        this.vista_users.getList().addMouseListener(new java.awt.event.MouseAdapter() {
+        this.vista_users.getjList().addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 list(evt);
             }
@@ -49,11 +49,11 @@ public class ctlUsers implements ActionListener {
             }
         } catch (Exception e) {
         }
-        vista_users.getList().setModel(dlm);
+        vista_users.getjList().setModel(dlm);
     }
 
     public void list(java.awt.event.MouseEvent evt) {
-        clsUser result = (clsUser) this.vista_users.getList().getSelectedValue();
+        clsUser result = (clsUser) this.vista_users.getjList().getSelectedValue();
         if (result instanceof clsUser) {
             vista_users.getTxtId().setText(result.getId());
             vista_users.getTxtName().setText(result.getName());

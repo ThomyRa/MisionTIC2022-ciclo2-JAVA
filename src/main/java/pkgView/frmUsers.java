@@ -21,7 +21,7 @@ public class frmUsers extends javax.swing.JFrame {
     public frmUsers() {
         initComponents();
     }
-    
+
     public JButton getBtnNew() {
         return btnNew;
     }
@@ -50,10 +50,6 @@ public class frmUsers extends javax.swing.JFrame {
         return txtPassword;
     }
 
-    public JList getList() {
-        return List;
-    }
-
     public JButton getBtnGraph() {
         return btnGraph;
     }
@@ -61,8 +57,10 @@ public class frmUsers extends javax.swing.JFrame {
     public JButton getBtnExport() {
         return btnExport;
     }
-    
-    
+
+    public JList getjList() {
+        return jList;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -78,7 +76,7 @@ public class frmUsers extends javax.swing.JFrame {
         btnSave = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        List = new javax.swing.JList<>();
+        jList = new javax.swing.JList<>();
         lblId = new javax.swing.JLabel();
         lblName = new javax.swing.JLabel();
         txtId = new javax.swing.JTextField();
@@ -120,9 +118,9 @@ public class frmUsers extends javax.swing.JFrame {
         btnClose.setText("Close");
         jPanel1.add(btnClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 440, 120, -1));
 
-        List.setBackground(new java.awt.Color(32, 33, 35));
-        List.setForeground(new java.awt.Color(51, 102, 204));
-        jScrollPane1.setViewportView(List);
+        jList.setBackground(new java.awt.Color(32, 33, 35));
+        jList.setForeground(new java.awt.Color(51, 102, 204));
+        jScrollPane1.setViewportView(jList);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 3, 334, 530));
 
@@ -234,13 +232,13 @@ public class frmUsers extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JList<String> List;
     private javax.swing.JButton btnClose;
     private javax.swing.JButton btnExport;
     private javax.swing.JButton btnGraph;
     private javax.swing.JButton btnNew;
     private javax.swing.JButton btnSave;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JList<String> jList;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
